@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+      --background: hsl(47, 88%, 63%);
+      --White: hsl(0, 0%, 100%);
+      --Grey: hsl(0, 0%, 20%);
+      --Black: hsl(0, 0%, 7%);
+      font-size: 16px;
+      font-family: 'Figtree';
+      --DarkGrey: hsl(0, 0%, 12%);
+      --OffBlack: hsl(0, 0%, 8%);
+      --Green: hsl(75, 94%, 57%);
+      background-color: var(--OffBlack);
+      font-size: 14px;
+    }
+    *{
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+    }
+    body{
+      height: 100vh;
+      width: 100%;
+      border: 2px solid red;
+      
+      position: relative;
+    }
+    .attribution {
+      border: 2px solid blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      position: relative;
+      color: var(--White);
+    }
+    #creds{
+      color: var(--White);
+      position: absolute;
+      bottom: 10px;
+      font-weight: 900;
+    }
+    .main-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: var(--DarkGrey);
+      padding:2.5rem;
+      gap: 1rem;
+      width: 30rem;
+      max-width: 90%;
+      font-family:"Inter";
+      border-radius: 1rem;
+      font-weight: 400;
+    }
+    p{
+      margin-top: 1.5rem;
+    
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .loc{
+      color: var(--Green);
+      font-weight: 600;
+    }
+    img{
+      width: 7rem;
+      border-radius: 50%;
+    }
+    .socials{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+     
+    }
+    .s-links{
+      font-weight: 700;
+      background-color: var(--Grey);
+      color: var(--White);
+      text-align: center;
+      padding: 1rem;
+      cursor: pointer;
+      border-radius: 7px;
+    }
+    .s-links:hover{
+      background-color: var(--OffBlack);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="attribution">
+    <div class="main-box">
+      <img src="assets/images/avatar-jessica.jpeg" alt="avatar">
+      <p>Jessica Randall</p>
+      <div class="loc">London, United Kingdom</div>
+      "Front-end developer and avid reader."
+      <div class="socials">
+        <div class="s-links">GitHub</div>
+        <div class="s-links">Frontend Mentor</div>
+        <div class="s-links">LinkedIn</div>
+        <div class="s-links">Twitter</div>
+        <div class="s-links">Instagram</div>
+      </div>
+    </div>
+    
+    <div id="creds">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Invacui</a>.
+  </div>
+  </div>
+</body>
+</html>
